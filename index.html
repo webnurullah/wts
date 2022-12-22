@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+    <!-- Fontawesome icon -->
+    <script src="https://kit.fontawesome.com/fcea059855.js" crossorigin="anonymous"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- normalize css -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- custome css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Responsive css -->
+    <link rel="stylesheet" href="css/brackpoint.css">
+</head>
+<body>
+    
+<!-- =============== ================ header ===================== =============== -->
+  <header class="header">
+      <div class="d-flex justify-content-between">
+        <div class="d-flex align-items-center">
+            <a href="/" class="text-decoration-none">
+                <img class="header-logo" src="images/header-logo.svg" alt="header-logo">
+            </a>
+           <div class="d-none d-lg-block">
+                <ul class="nav header-nav">
+                    <li><a href="#" class="nav-link text-uppercase">Veranstaltung</a></li>
+                    <li><a href="#" class="nav-link text-uppercase">Speakers</a></li>
+                    <li><a href="#" class="nav-link text-uppercase">Programm</a></li>
+                    <li><a href="#" class="nav-link text-uppercase">Start-up Area</a></li>
+                    <li><a href="#" class="nav-link text-uppercase">Rückblicke</a></li>
+                </ul>
+           </div>
+        </div>
+
+        <div class="d-flex header-right">
+            <div class="align-self-center sponsor d-none d-xxl-block" >
+                <span class="d-block" >Main Sponsor</span>
+                <a href="/" class="text-decoration-none">
+                    <img src="images/sponsor-logo.svg" alt="header-logo">
+                </a>
+            </div>
+            <div class="dropdown-lang align-self-center d-none d-lg-block">
+                <select class="form-select" id="autoSizingSelect1">
+                  <option selected>DEU</option>
+                  <option value="1">BNT</option>
+                  <option value="2">ENL</option>
+                </select>
+            </div>
+            <div class="bars d-flex align-items-center d-lg-none">
+               <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample"> <i class="fa-regular fa-bars"></i></a>
+            </div>
+            <a class="tikt text-decoration-none d-flex align-items-center text-uppercase" href="">Tickets</a>
+           
+        </div>
+      </div>
+  </header>
+
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <a href="/" class="text-decoration-none">
+        <img class="header-logo" src="images/header-logo.svg" alt="header-logo">
+    </a>
+    <div class="d-flex align-items-center" >
+        <div class="dropdown-lang align-self-center">
+            <select class="form-select" id="autoSizingSelect1">
+              <option selected>DEU</option>
+              <option value="1">BNT</option>
+              <option value="2">ENL</option>
+            </select>
+        </div>
+          <button id="close-icon" type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    </div>
+    <div class="offcanvas-body d-flex flex-column align-content-between">
+        
+            <ul class="list-unstyled text-center header-nav-offcave">
+                <li><a href="#" class="nav-link text-uppercase">Veranstaltung</a></li>
+                <li><a href="#" class="nav-link text-uppercase">Speakers</a></li>
+                <li><a href="#" class="nav-link text-uppercase">Programm</a></li>
+                <li><a href="#" class="nav-link text-uppercase">Start-up Area</a></li>
+                <li><a href="#" class="nav-link text-uppercase">Rückblicke</a></li>
+            </ul>
+            <div class="text-center mt-auto">
+                <img src="images/sponsor-logo.svg" alt="">
+                <div class="offcav-ticket" >
+                 <a class="text-decoration-none" href=""><span>Tickets kaufen</span></a>
+                </div>
+            </div>
+      
+    </div>
+  </div>
+
+<!-- =============== ================ banner ===================== =============== -->
+<div class="hero-banner">
+    <div class="container">
+         <div class="row">
+            <h1>Südtiroler  <br>
+                Wirtschafts <br>
+                forum</h1> 
+                <span class="date" >Freitag, 24. März 2023 – MEC / Bozen</span>
+                <ul class="list-unstyled d-flex" >
+                    <li class="d-flex justify-content-center align-items-center flex-column" >
+                        <span class="number" >25</span>
+                        <span class="time" >Wochen</span>
+                    </li>
+                    <li class="d-flex justify-content-center align-items-center flex-column" >
+                        <span class="number" >00</span>
+                        <span class="time" >Tage</span>
+                    </li>
+                    <li class="d-flex justify-content-center align-items-center flex-column" >
+                        <span class="number" >12</span>
+                        <span class="time" >Stunden</span>
+                    </li>
+                    <li class="d-flex justify-content-center align-items-center flex-column" >
+                        <span class="number" >45</span>
+                        <span class="time" >Minuten</span>
+                    </li>
+                    <li class="d-flex justify-content-center align-items-center flex-column" >
+                        <span class="number" >23</span>
+                        <span class="time" >Sekunden</span>
+                    </li>
+                </ul>
+         </div>
+    </div>
+ </div>
+<div class="d-md-none text-center mobile-spo">
+    <img src="images/mobile-banner-bottom-spo-logo.svg" alt="">
+</div>
+<!-- =============== ================ forum ===================== =============== -->
+<div class="forum-section">
+    <div class="number-box text-center">
+        <img src="images/one.svg" alt="">
+        <div class="line-box" >
+            <div class="line d-inline-block"></div>
+        </div>
+        <span class="text" >Veranstaltung</span>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6 f-left-contnet">
+                <h2>Südtiroler  <br>
+                    Wirtschafts <br>
+                    forum</h2> 
+                <img class="f-one d-none d-md-block" src="images/forum_one.png" alt="">
+                <video class="f-two" poster="images/forum-tow-button.png" controls>
+                    <source src="images/video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+            </div>
+            <div class="col-12 col-md-6 f-right-contnet">
+                <span>Freitag, 24. März 2023</span>
+                <h3>Four Points by Sheraton/Messe Bozen</h3>
+                <p>Das Südtiroler Wirtschaftsforum verspricht auch 2023 zu einem wichtigen Treffpunkt für Unternehmer, Führungskräfte und Entscheidungsträger in Südtirol zu werden. Es erwarten Sie wie immer hochkarätige Vortragende, spannende Impulse und ein abwechslungsreiches Programm.</p>
+                <br>
+                <p> Nützen Sie das Südtiroler Wirtschaftsforum für freundschaftlichen Wissens- und Erfahrungsaustausch. Der Teilnehmerkreis geht weit über Südtirol hinaus und bietet hervorragende Möglichkeiten zur Reflexion des eigenen Tuns, zu innovativen Anstößen, zum Dialog und zur Kontaktpflege mit Freunden und Partnern.</p>
+                <button class="btn-custom-one btn btn-outline-light text-uppercase">Tickets kaufen</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- =============== ================ speaker ===================== =============== -->
+<div class="speaker-section">
+    <div class="speaker-part">
+        <div class="number-box text-center">
+            <img src="images/two.svg" alt="">
+            <div class="line-box">
+                <div class="line d-inline-block"></div>
+            </div>
+            <span class="text" >Speakers</span>
+        </div>
+        
+       
+        <div class="slider-content">
+            <div id="speaker-slider" class="owl-carousel owl-theme">
+                        <div class="card">
+                            <div class="card-img-box">
+                                <img src="images/speaker-person.png" class="card-img-top" alt="...">
+                            </div>
+                               
+                                <div class="card-body">
+                                    <div class="animation"></div>
+                                  <h5 class="card-title">Georg Kofler</h5>
+                                  <p class="card-text">Hauptaktionär & Chairman der SOCIAL CHAIN AG, Berlin | Juror und Investor in „Die Höhle der Löwen“, Köln</p>
+                                </div>
+                        </div>
+                        <div class="card">
+                                <img src="images/speaker-person.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div class="animation"></div>
+                                  <h5 class="card-title">Georg Kofler</h5>
+                                  <p class="card-text">Hauptaktionär & Chairman der SOCIAL CHAIN AG, Berlin | Juror und Investor in „Die Höhle der Löwen“, Köln</p>
+                                </div>
+                        </div>
+                        <div class="card">
+                                <img src="images/speaker-person.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div class="animation"></div>
+                                  <h5 class="card-title">Georg Kofler</h5>
+                                  <p class="card-text">Hauptaktionär & Chairman der SOCIAL CHAIN AG, Berlin | Juror und Investor in „Die Höhle der Löwen“, Köln</p>
+                                </div>
+                        </div>
+                        <div class="card">
+                                <img src="images/speaker-person.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div class="animation"></div>
+                                  <h5 class="card-title">Georg Kofler</h5>
+                                  <p class="card-text">Hauptaktionär & Chairman der SOCIAL CHAIN AG, Berlin | Juror und Investor in „Die Höhle der Löwen“, Köln</p>
+                                </div>
+                        </div>
+                        <div class="card">
+                                <img src="images/speaker-person.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div class="animation"></div>
+                                  <h5 class="card-title">Georg Kofler</h5>
+                                  <p class="card-text">Hauptaktionär & Chairman der SOCIAL CHAIN AG, Berlin | Juror und Investor in „Die Höhle der Löwen“, Köln</p>
+                                </div>
+                        </div>
+                        <div class="card">
+                                <img src="images/speaker-person.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div class="animation"></div>
+                                  <h5 class="card-title">Georg Kofler</h5>
+                                  <p class="card-text">Hauptaktionär & Chairman der SOCIAL CHAIN AG, Berlin | Juror und Investor in „Die Höhle der Löwen“, Köln</p>
+                                </div>
+                        </div>
+                        <div class="card">
+                                <img src="images/speaker-person.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div class="animation"></div>
+                                  <h5 class="card-title">Georg Kofler</h5>
+                                  <p class="card-text">Hauptaktionär & Chairman der SOCIAL CHAIN AG, Berlin | Juror und Investor in „Die Höhle der Löwen“, Köln</p>
+                                </div>
+                        </div>
+                      
+            </div>   
+        </div>
+    </div>
+    <div class="program-part">
+        <div class="number-box text-center">
+            <img src="images/three.svg" alt="">
+            <div class="line-box" >
+                <div class="line d-inline-block"></div>
+            </div>
+            <span class="text" >Programm</span>
+        </div>
+        <div class="container">
+            <p class="text-center text-white">   Dieses BG-image wird es in der HTML-Umsetzung nicht geben. Dort soll das obere Hintergrundbild solange sticky bleiben bis man ans Ende des Progamms scrollt. Siehe XD-LINK</p>
+            <div class="program-box">
+                <div class="heading text-center">
+                    <h4>Freitag, 24. März 2023</h4>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-3">
+                      <div class="timing d-flex justify-content-center align-items-center h-100" >
+                        <span>12:00</span>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-9">
+                       <div class="prog-single">
+                            <p>Come together & <br>
+                                Start-up Unternehmen präsentieren sich</p>
+                            <span>English</span>
+                       </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-3">
+                      <div class=" d-flex justify-content-center align-items-center h-100" >
+                        <span>13:30</span>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-9">
+                       <div class="prog-single">
+                            <p>Begrüßung</p>
+                            <span>English</span>
+                            <p> <span>Arno Kompatscher,</span> Landeshauptmann von Südtirol <br>
+                            Gerhard Brandstätter, Präsident Südtiroler Sparkasse</p>
+                       </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-3">
+                      <div class="timing d-flex justify-content-center align-items-center h-100" >
+                        <span>13:45- 15:15</span>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-9">
+                       <div class="prog-single">
+                            <p>Giovanni Palazzo</p>
+                            <span>English</span>
+                            <p> <span> Electrifying America – a fascinating adventure </span> <br>
+                                Präsident und CEO, Electrify America LLC & Präsident, Electrify Canada</p>
+                       </div>
+                       <div class="prog-single">
+                            <p>Lars Carlstrom</p>
+                            <span>English</span>
+                            <p> <span>Energizing the future – New opportunities for Italy and Europe</span> <br>
+                                Chairman of the Board of Directors, Founder & CEO, Italvolt Spa, Mailand</p>
+                       </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-3">
+                      <div class=" d-flex justify-content-center align-items-center h-100" >
+                        <span>15:15 - 15:45</span>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-9">
+                       <div class="prog-single">
+                            <h5>Kommunikationspause mit Erfrischungen</h5>
+                       </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-3">
+                      <div class="timing d-flex justify-content-center align-items-center h-100" >
+                        <span>15:45 - 18:00</span>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-9">
+                       <div class="prog-single">
+                            <p>Giovanni Palazzo</p>
+                            <span>English</span>
+                            <p> <span> Electrifying America – a fascinating adventure </span> <br>
+                                Präsident und CEO, Electrify America LLC & Präsident, Electrify Canada</p>
+                       </div>
+                       <div class="prog-single">
+                            <p>Lars Carlstrom</p>
+                            <span>English</span>
+                            <p> <span>Energizing the future – New opportunities for Italy and Europe</span> <br>
+                                Chairman of the Board of Directors, Founder & CEO, Italvolt Spa, Mailand</p>
+                       </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-3">
+                      <div class=" d-flex justify-content-center align-items-center h-100" >
+                        <span>18:00</span>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-9">
+                       <div class="prog-single">
+                            <h5>Get together und Ausklang mit Erfrischungen</h5>
+                       </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-white program-bottom-text">
+                <div class="col-12 col-md-6">
+                    <span>Moderation</span>
+                    <p>Christian Pfeifer, Chefredakteur der Südtiroler Wirtschaftszeitung, Bozen</p>
+                </div>
+                <div class="col-12 col-md-6">
+                   <div class="d-flex justify-content-end">
+                     <p>Simultanübersetzung der Vorträge und Diskussionen <br>
+                        Deutsch • Italienisch • Englisch</p>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+</div>
+
+<!-- =============== ================ footer section ===================== =============== -->
+<div class="footer-section">
+    <div class="container-fluid">
+        <div class="d-flex flex-column flex-xl-row justify-content-between">
+            <div class="footer-nav d-flex flex-column flex-xl-row align-items-center ">
+                <img src="images/footer-logo.svg" alt="">
+                <div class="d-flex flex-column flex-md-row flex-wrap h-100 align-items-center" >
+                    <a href="" class="text-decoration-none d-none d-md-block">Impressum</a>
+                    <a href="" class="text-decoration-none d-none d-md-block"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="" class="text-decoration-none">Tel +43 512 2070 1721</a>
+                    <a href="" class="text-decoration-none">office@wirtschaftsforum.it</a>
+                    <a href="" class="text-decoration-none">UID-Nr.: ATU57698325</a>
+                </div>
+            </div>
+            <div class="footer-m d-flex align-items-center justify-content-center">
+                <span class="d-none d-md-block" >Konzept & Programmierung by</span>
+                <img src="images/m-logo.svg" alt="">
+            </div>
+            <div class="d-flex justify-content-around d-md-none footer-mobile-nav">
+                <a href="" class="text-decoration-none">Impressum</a>
+                <a href="" class="text-decoration-none">Privacy</a>
+                <a href="" class="text-decoration-none"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+    <!-- jquery -->
+    <script src="js/jquery.min.js"></script>
+    <!-- owl carosuer -->
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+
+
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- custom js -->
+    <script src="js/script.js"></script>
+</body>
+</html>
