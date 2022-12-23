@@ -1,34 +1,42 @@
 @font-face {
      font-family: Glober Regular;
-    src: url(../fonts/Glober-Trial-Regular.woff);
+    src: url(../fonts/Fontfabric\ -\ GloberRegular.otf);
 }
 @font-face {
      font-family: Glober Thin;
-    src: url(../fonts/Glober-Trial-Thin.woff);
+    src: url(../fonts/Fontfabric\ -\ GloberThin.otf);
 }
 @font-face {
      font-family: Glober SemiBold;
-    src: url(../fonts/Glober-Trial-SemiBold.woff);
+    src: url(../fonts/Fontfabric\ -\ GloberSemiBold.otf);
 }
 @font-face {
      font-family: Glober Bold;
-    src: url(../fonts/Glober-Trial-Bold.woff);
+    src: url(../fonts/Fontfabric-GloberBold.otf);
 }
 @font-face {
-     font-family: Glober black;
-    src: url(../fonts/Glober-Trial-Black.woff);
+     font-family: Glober xblack;
+    src: url(../fonts/Fontfabric\ -\ GloberxBold.otf);
 }
 @font-face {
      font-family: Glober book;
-    src: url(../fonts/Glober-Trial-Book.woff);
+    src: url(../fonts/Fontfabric\ -\ GloberBook.otf);
 }
 @font-face {
-     font-family: Glober Extrabold;
-    src: url(../fonts/Glober-Trial-ExtraBold.woff);
+     font-family: Glober havery;
+    src: url(../fonts/Fontfabric\ -\ GloberHeavy.otf);
+}
+@font-face {
+     font-family: Glober light;
+    src: url(../fonts/Fontfabric\ -\ GloberLight.otf);
+}
+@font-face {
+     font-family: Glober bblack;
+    src: url(../fonts/Fontfabric-GloberBlack.otf);
 }
 body{
-    /* font-family: 'Glober Regular', Helvetica, Arial, sans-serif; */
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Glober Regular', sans-serif;
+    /* font-family: 'Open Sans', sans-serif; */
     color: #333;
 }
 
@@ -202,13 +210,18 @@ body{
     font-size: 20px;
     line-height: 1.5;
 }
+.f-right-contnet h3{
+    margin-bottom: 64px;
+}
 /* ============================================ speaker section  ======================================== */
 .speaker-section{
     background: url(../images/speaker-bg-blur.png) no-repeat center center;
     background-size: cover;
     width: 100%;
     background-attachment: fixed;
+   
 }
+
 .speaker-part{
     position: relative;
 }
@@ -219,7 +232,7 @@ body{
     box-shadow: 0 0 38px 0 rgba(0, 0, 0, 0.07);
 }
 .speaker-section .card .card-body{
-   padding: 20px 30px 25px;
+   padding: 20px 30px 30px;
 }
 .speaker-section .card .card-body h5{
     font-family: 'Open Sans', sans-serif;
@@ -233,14 +246,14 @@ body{
     padding-top: 272px;
     padding-bottom: 240px;
 }
-.card-body{
+#speaker-slider{
+    max-width: 1172px;
+}
+
+.slider-content .card-body{
     position: relative;
 }
-.card{
-    overflow: hidden;
-    width: 360px;
-}
-.animation{
+.slider-content .animation{
     width: 94px;
     height: 3px;
     left: 0;
@@ -248,26 +261,32 @@ body{
   background-color: #f44535;
   position: absolute;
   z-index: 1;
-  transition: all .5s;
+  transition: all .3s;
 }
-.card:hover .animation{
+.slider-content .card{
+    overflow: hidden;
+    border-radius: 5px;
+}
+.slider-content .card:hover .animation{
     width: 100%;
 }
-.card-img-box{
-    height: 386px;
-     overflow: hidden;
+.slider-content .card-img-box{
+    overflow: hidden;
+    position: relative;
 }
-.card-img-top{
+.slider-content .card-img-top{
     transition: all .5s;
 }
-.card:hover .card-img-top{
+.slider-content .card:hover .card-img-top{
     transform: scale(1.1);
-    position: relative;
-    top: 0;
+    transform-origin:  top;
 }
-.speaker-section .owl-theme .owl-nav {
+.slider-content .speaker-section .owl-theme .owl-nav {
     margin-top: 17px !important;
     
+}
+.slider-content .card-text{
+    font-size: 14px;
 }
 
 .speaker-section .owl-theme .owl-nav .disabled{
@@ -278,6 +297,9 @@ body{
     background: #f44535 !important;
     width: 60px;
     height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .speaker-section .owl-nav .owl-next, .speaker-section .owl-nav .owl-prev {
         position: absolute;
@@ -327,28 +349,52 @@ body{
     z-index: 2;
 }
 .program-box{
-    max-width: 1170px;
+    max-width: 1172px;
     box-shadow: 0 0 57px 0 rgba(0, 0, 0, 0.07);
     background-color: #fff;
+    padding-bottom: 32px;
+    margin: auto;
 }
 .program-box .heading{
     box-shadow: 0px 8px 13px 0 rgba(14, 44, 53, 0.05);
     background-color: #f44535;
+    height: 96px;
 }
 .program-box .heading h4{
     font-size: 30px;
-    line-height: 1.33;
    letter-spacing: -1.5px;
    padding: 30px 0px;
    color: #fff;
 }
+.color-red{
+    color: #f44535;
+}
+.program-box .prog-single h6{
+    font-size: 24px;
+}
+.program-box .prog-single>span{
+    margin-top:10px;
+    font-size: 13px;
+    letter-spacing: -0.65px;
+}
+.program-box .prog-single p{
+    margin-top:10px;
+    font-size: 18px;
+}
+
 .program-box .prog-single{
    padding-top: 30px;
-   padding-bottom: 30px;
     margin-right: 40px;
     margin-left: 78px;
-    border-bottom: 1px solid #f1f1f1;
+   
 }
+.program-box .line{
+    height: 1px;
+    width: 100%;
+    background-color: #f1f1f1;
+    margin-top: 33px;
+}
+
 .program-box .timing{
     background-color: #fbfbfb;
 }
@@ -357,6 +403,9 @@ body{
     padding-bottom: 30px;
     font-size: 13px;
     font-weight: bold;
+    color: #fff;
+    max-width: 1172px;
+    margin: auto;
 }
 .program-bottom-text span{
     font-weight: bolder;
@@ -369,6 +418,15 @@ body{
     box-shadow: 0 0 38px 0 rgba(0, 0, 0, 0.07);
     margin-top: 50px;
 }
+.program-box .p-time{
+    font-size: 24px;
+}
+.p-top-text{
+    font-size: 13px;
+}
+
+
+
 /* ============================================ startup-section  ======================================== */
 .startup-section{
     position: relative;
@@ -482,4 +540,5 @@ body{
 }
 .footer-nav a{
     font-size: 14px;
+}
 }

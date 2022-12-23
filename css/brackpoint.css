@@ -48,9 +48,21 @@
         position: relative;
         left: 10px;
     }
-    
+    #speaker-slider{
+      max-width: 1200px;
+    }
+    .program-box{
+        max-width: 1200px;
+    }
  
-
+  .slider-content{
+    padding-top: 200px;
+    padding-bottom: 80px;
+   }
+   .program-part {
+  
+    padding-top: 160px;
+  }
       
 }
 /* XX-Large devices (larger desktops, 1400px and up) */
@@ -69,7 +81,12 @@
     .header-nav .nav-link{
         margin-left: 15px;
     }
-  
+    #speaker-slider{
+      max-width: 1100px;
+   }
+   .program-box{
+    max-width: 1100px;
+}
     
     .footer-nav a{
         margin-left: 30px;
@@ -128,6 +145,38 @@
     .f-right-contnet{
       padding-left: 6%;
   }
+  .f-right-contnet p{
+    font-size: 18px;
+  }
+  .f-right-contnet span{
+    font-size: 26px;
+  }
+  .f-right-contnet h3{
+    font-size: 22px;
+    margin-bottom: 30px;
+  }
+  
+  /* ============== speaker ============= */
+  #speaker-slider{
+    max-width: 80%;
+  }
+  
+  .slider-content{
+    padding-top: 180px;
+    padding-bottom: 50px;
+   }
+   .program-box .prog-single{
+    margin-left: 40px;
+   }
+   .program-box .p-time{
+    font-size: 20px;
+   }
+   .program-box .prog-single h6{
+    font-size: 20px;
+   }
+   .program-box .prog-single p{
+    font-size: 16px;
+   }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -209,15 +258,24 @@
       font-size: 32px ;
       margin-bottom: 0px;
       text-transform: uppercase;
-  } 
-     
+    } 
+    #speaker-slider{
+      max-width: 90%;
+    }
+ 
+    .speaker-section .card {
+        width: 300px;
+    }
+    .slider-content{
+      padding-top: 150px;
+     }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (max-width: 768px) { 
         .container{
             padding-right: 36px;
-            padding-left: 35px;
+            padding-left: 36px;
         }
         .btn-custom-one{
           font-size: 10px;
@@ -257,6 +315,9 @@
         
       }
       /* ============================================ forum section  ======================================== */
+      .forum-section .row{
+        margin: 0px;
+      }
       .number-box{
         left: 18px;
         top: 28px;
@@ -307,16 +368,131 @@
       margin-bottom: 35px;
     }
     /* ===================================== speaker section  ======================================== */
+    .speaker-section{
+      background: url(../images/mobile-Speakers-bg.png) no-repeat center center;  
+      background-size: cover;
+      width: 100%;
+      background-attachment: fixed;
+    }
+    .owl-theme .owl-nav.disabled+.owl-dots{
+      margin-top: 50px;
+    }
+    .program-part{
+      background-color: #fff;
+      padding-top: 130px;
+      padding-bottom: 30px;
+  } 
+  .program-box{
+    border-radius: 0px 0px 5px 5px;
+  }
+  .program-box .heading{
+    border-radius: 5px 5px 0px 0px;
+    box-shadow: none;
+    height: 60px;
+    margin-bottom: 26px;
+  }
+  .program-box .heading h4{
+    font-size: 18px;
+    line-height: 0px;
+    letter-spacing: -0.9px;
+  }
+  .program-bottom-text{
+    color: #333333;
+    padding: 23px 20px 0px;
+    
+  }
+  .program-bottom-text p{
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 1.18;
+    letter-spacing: -0.55px;
+    font-weight: normal;
+    
+  }
+  .program-bottom-text span{
+    font-weight: normal;
+}
+  .program-box .timing{
+    background-color: #fff;
+  }
+  .program-part .number-box .text{
+    color: #333333;
+  }
+  .program-part .number-box .line{
+    background-color: #333333;
+  }
     .speaker-section .card{
       width: 276px;
     }
     .slider-content{
       padding-top: 122px;
-      padding-bottom: 122px;
+      padding-bottom: 60px;
      }
     .owl-carousel .owl-stage{
       left: 36px;
     }
+    .speaker-section .card .card-body h5{
+      font-size: 18px;
+    }
+    .slider-content .card-text{
+      font-size: 12px;
+    }
+    .speaker-section .card .card-body {
+      padding: 15px 23px 20px;
+  }
+  #speaker-slider{
+    max-width: 100%;
+  }
+  .program-part .container-fluid{
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+
+  
+  .program-box .prog-single {
+    padding-top: 5px;
+    padding-bottom:23px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.program-box{
+  padding-bottom: 0px;
+  
+}
+
+.program-box .p-time{
+  margin-top: 0px;
+  margin-left: 0px;
+  font-size: 18px;
+  color: #f44535;
+  margin-right: 20px;
+  margin-left: 20px;
+  
+}
+.color-red{
+  color: #2f2f2f;
+}
+.program-box .prog-single h6{
+  font-size: 18px;
+  line-height: 1.28;
+  letter-spacing: -1.35px;
+  margin-bottom: 10px;
+}
+.program-box .prog-single>span{
+  font-size: 11px;
+  font-weight: 800;
+  line-height: 1.36;
+  letter-spacing: -0.55px;
+  margin-bottom: 10px;
+  display: block;
+}
+.program-box .prog-single p{
+  font-size: 13px;
+}
+
+
+
       /* ==================================== footer section  ================================== */
       .footer-section{
         padding-top: 60px;

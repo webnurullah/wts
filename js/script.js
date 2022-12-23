@@ -1,7 +1,7 @@
 function owlInitialize() {
     if ($(window).width() < 768) {
-        $('.logo-slider-box').addClass("owl-carousel");
-        $('.owl-carousel').owlCarousel({
+        $('#logo-slider-box').addClass("owl-carousel");
+        $('#logo-slider-box').owlCarousel({
             loop:false,    
             margin: 20,  
             autoWidth:true,
@@ -11,8 +11,8 @@ function owlInitialize() {
           
         });
     }else{
-        $('.owl-carousel').owlCarousel('destroy');
-        $('.logo-slider-box').removeClass("owl-carousel");
+        $('#logo-slider-box').owlCarousel('destroy');
+        $('#logo-slider-box').removeClass("owl-carousel");
     }
     }
     $(document).ready(function(e) {
@@ -27,20 +27,30 @@ $(document).ready(function(){
         loop:true,
         margin:45,
         nav:true,
+        dots: true,   
         responsiveClass:true,
         responsive:{
             0:{
-                items:1,
-                nav:false
+                autoWidth:true,
+                dots: true,   
+                nav:false,
+            },
+            768:{
+                autoWidth:true,
+                nav:false,
+                dots: true,   
             },
             992:{
-                items:2,
-                nav:false
-            },
-            1000:{
                 items:3,
                 loop:false,
-                nav:true
+                nav:false,
+                dots: true,   
+            },
+            1400:{
+                items:3,
+                loop:false,
+                nav:true,
+                dots: true,   
             }
         }
     })
