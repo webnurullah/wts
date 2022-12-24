@@ -410,13 +410,16 @@ body{
 .program-bottom-text span{
     font-weight: bolder;
 }
+
 .program-bottom-box{
     background-color: #f44535;
     color: #fff;
     padding: 30px 40px;
     border-radius: 5px;
     box-shadow: 0 0 38px 0 rgba(0, 0, 0, 0.07);
-    margin-top: 50px;
+    margin: 50px auto 0px;
+    max-width: 1172px;
+    
 }
 .program-box .p-time{
     font-size: 24px;
@@ -425,34 +428,171 @@ body{
     font-size: 13px;
 }
 
-
-
+/*  ==============  program bottom box =================== */
+.program-bottom-box h5{
+    font-size: 30px;
+}
+.price-box{
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+.price-box .text-box{
+  margin-left: 60px;
+}
+.price-box .text-box h5{
+  margin-bottom: 30px;
+}
+.program-bottom-box .p-text-box{
+    font-size: 16px;
+    line-height: 36px;
+}
+.program-bottom-box .p-text-box span{
+    font-weight: bold;
+}
+.program-bottom-box .btn-outline-light:hover{
+    color: #fff;
+    background-color: transparent;
+}
 /* ============================================ startup-section  ======================================== */
 .startup-section{
     position: relative;
     padding-bottom: 200px;
+    padding-top: 50px;
    
 }
-.startup-content{
-    padding-top: 60px;
+.startup-section .number-box .text, 
+.blog-section .number-box .text{
+    color: #333333;
 }
+.startup-section .number-box .line,
+.blog-section .number-box .line{
+    background-color: #333333;
+}
+.startup-wrap{
+    position: relative;
+}
+.startup-content{
+    margin-top: 100px;
+    max-width: 556px;
+}
+.startup-content span{
+    font-size: 30px;
+    letter-spacing: -1.5px;
+    color: #f44535;
+}
+.startup-img-box{
+    position: absolute;
+    right: 0;
+    top: 70px;
+}
+.startup-img-box .img-one{
+    width: 536px;
+  position: relative;
+  z-index: 2;
+
+}
+.startup-img-box .img-two{
+    width: 276px;
+    position: absolute;
+    left: -76px;
+    top: -42px;
+    z-index: 1;
+}
+
+.startup-content h2{
+    font-size: 48px;
+    line-height: 50px;
+    margin-top: 10px;
+    margin-bottom: 38px;
+}
+.start-up-redbox h3{
+    font-size: 30px;
+    letter-spacing: -1.5px;
+}
+.start-up-redbox p{
+    font-size: 20px;
+   line-height: 30px;
+   margin-top: 35px;
+   margin-bottom: 67px;
+   max-width: 506px;
+}
+
 .start-up-redbox{
     padding: 62px 60px 64px;
     background-color: #f44535;
-    max-width: 1104px;
+    margin-top: 130px;
+    max-width: 1105px;
     border-radius: 20px 20px 20px 0px;
     color: #fff;
 }
+
 .logo-slider-section .logo-box{
     border-radius: 5px;
     box-shadow: 0 0 38px 0 rgba(0, 0, 0, 0.07);
-    max-width: 360px;
+    width: 360px;
     padding: 35px;
+}
+.logo-box h5{
+    font-size: 18px;
+    font-weight: bold;
+}
+.logo-box span{
+    font-size: 14px;
+  text-align: left;
+  color: #707070;
+}
+.logo-box img{
+    width: 94px;
+}
+
+.logo-box:hover .logo-box-arrow{
+    top: 0px;
+    opacity: 1;
+}
+.logo-box-arrow{
+    position: relative;
+    top: 10px;
+    margin-top: 8px;
+    transition: all .3s;
+    opacity: 0;
+}
+.logo-box-inner{
+    margin-left: 40px;
+}
+.logo-box-inner h5{
+    position: relative;
+    top: 10px;
+    transition: all .3s;
+}
+.logo-box-inner span{
+    position: relative;
+    top: 10px;
+    transition: all .3s;
+}
+.logo-box:hover .logo-box-inner h5{
+    top: 0px;
+}
+.logo-box:hover .logo-box-inner span{
+    top: 0px;
+}
+
+.logo-box-arrow i{
+    color: #F44535;
+    font-size: 10px;
+}
+.logo-box-arrow a{
+    font-family: Glober bblack;
+    color: #F44535;
+    display: inline-block;
+    margin-right: 5px;
+    font-size: 10px;
 }
 .logo-slider-section{
     margin-top: 70px;
 }
-
+.logo-slider-section .owl-carousel .owl-item img{
+    width: auto;
+}
 /* ============================================ startup-section  ======================================== */
 .blog-section{
     position: relative;
@@ -462,14 +602,28 @@ body{
     padding-bottom: 200px;
 }
 .blog-content h2{
-
+    font-size: 36px;
+    line-height: 40px;
+    font-family: Glober Bold;
+}
+.blog-content p{
+    font-size: 19px;
+    line-height: 24px;
+    font-family: Glober book;
+    max-width: 440px;
+    margin-left: 140px;
+}
+#owl-carousel-blog{
+    margin-top: 70px;
 }
 .blog-box .date{
-    padding: 14px 14px 70px 14px;
-    display: inline-block;
+    width: 138px;
+    height: 138px;
+    display: flex;
+    justify-content: center;
     background-color: #f44535;
     font-size: 48px;
-    font-weight: bold;
+    font-family: Glober Bold;
     color: #fff;
 }
 .blog-box .inner-box{
@@ -483,21 +637,45 @@ body{
     letter-spacing: -1.8px;
     color: #2f2f2f;
     margin-top: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 45px;
 }
-.blog-box .inner-box .link-arrow{
+.blog-box .inner-box .link-arrow {
     font-size: 13px;
     font-weight: bold;
     letter-spacing: -0.65px;
+    
+}
+.blog-box .inner-box .link-arrow a{
     color: #f44535;
 }
 .blog-box .inner-box .link-arrow span{
     margin-right: 8px;
+    font-size: 13px;
 }
 .blog-box .inner-box img{
     box-shadow: 0 0 35px 0 rgba(0, 0, 0, 0.18);
 }
-
+.blog-section .container-md{
+    padding: 0px;
+}
+.blog-content .owl-theme .owl-nav {
+    margin-top: 10px;
+    position: absolute;
+    top: -190px;
+    right: 46px;
+    font-size: 40px;
+    background-color: #fbfbfb;
+  }
+  .owl-theme .owl-nav .disabled{
+    opacity: 1;
+  }
+  .blog-content .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot{
+    padding: 15px !important;
+  }
+  .blog-content .owl-theme .owl-nav [class*=owl-]:hover{
+    color: #333333;
+    background-color: transparent;
+  }
 /* ============================================ spondors-section  ======================================== */
 .spondors-section{
     background-color: #fbfbfb;
