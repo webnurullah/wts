@@ -138,6 +138,10 @@
   .logo-box-inner{
     margin-left: 20px;
    }
+   .f-right-contnet span{
+    font-size: 30px;
+    letter-spacing: -1.5px;
+}
 }
 
 
@@ -769,12 +773,10 @@
 
 /* sponsor */
   .spondors-section{
-    padding-top:60px;
+    padding-top:0px;
     padding-bottom: 60px;
   }
-  .spondors-section h6{
-    margin-top: 0px;
-  }
+ 
       /* ==================================== footer section  ================================== */
       .footer-section{
         padding-top: 60px;
@@ -811,6 +813,10 @@
     .spondors-section .single-logo{
       width: 125px;
     }
+    .spondors-section .star{
+      width: auto;
+    }
+  
   
  }
 /* Small devices (landscape phones, 390px and up) */

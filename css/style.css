@@ -15,7 +15,7 @@
     src: url(../fonts/Fontfabric-GloberBold.otf);
 }
 @font-face {
-     font-family: Glober xblack;
+     font-family: Glober xbold;
     src: url(../fonts/Fontfabric\ -\ GloberxBold.otf);
 }
 @font-face {
@@ -43,7 +43,9 @@ body{
 .btn-check:focus + .btn, .btn:focus{
     box-shadow: none;
 }
-
+i.fa-regular.fa-message.me-2 {
+    font-size: 13px;
+}
 /* ============================================ header ======================================== */
 .header{
     box-shadow: 0 0 73px 0 rgba(0, 0, 0, 0.3);
@@ -58,7 +60,7 @@ body{
 }
 .header-nav .nav-link{
     font-size: 14px;
-    font-weight: bold;
+    font-family: Glober Bold;
     letter-spacing: -0.7px;
     color: #333;
     margin-left: 54px;
@@ -104,7 +106,7 @@ body{
 }
 .hero-banner h1{
     font-size: 60px;
-    font-weight: bold;
+    font-family: Glober Bold;
     letter-spacing: 3px;
     margin: 0px;
 }
@@ -113,6 +115,7 @@ body{
     letter-spacing: -1.5px;
     margin: 15px 0px 60px;
     display: inline-block;
+    font-family: Glober book;
 }
 .hero-banner ul li{
     width: 122px;
@@ -128,10 +131,12 @@ body{
     display: block;
 }
 .hero-banner .number{
+    font-family: Glober Bold;
     font-size: 60px;
   line-height: 37px;
 }
 .hero-banner .time{
+    font-family: Glober Bold;
     font-size: 16px;
     margin-top: 15px;
     letter-spacing: 1px;
@@ -164,11 +169,14 @@ body{
     font-size: 12px;
     letter-spacing: 1.2px;
     color: #fff;
+    font-family: Glober bblack;
 }
 .btn-custom-one{
     padding: 15px 12px 12px;
     font-size: 12px;
     line-height: 1.33;
+    letter-spacing: 1.2px;
+    font-family: Glober bblack;
 }
 /* ============================================ forum  ======================================== */
 .forum-section{
@@ -183,6 +191,7 @@ body{
     position: relative;
 }
 .f-left-contnet h2{
+    font-family: Glober Bold;
     font-size: 36px ;
     margin-bottom: 130px;
 }
@@ -204,18 +213,16 @@ body{
 }
 .f-right-contnet span{
     font-size: 36px;
-    font-weight: 600;
+    font-family: Glober SemiBold;
 }
-.f-right-contnet span{
-    font-size: 30px;
-    letter-spacing: -1.5px;
-}
+
 .f-right-contnet p{
     font-size: 20px;
     line-height: 1.5;
 }
 .f-right-contnet h3{
     margin-bottom: 64px;
+    font-family: Glober book;
 }
 /* ============================================ speaker section  ======================================== */
 .speaker-section{
@@ -291,6 +298,7 @@ body{
 }
 .slider-content .card-text{
     font-size: 14px;
+    font-family: Glober book;
 }
 
 .speaker-section .owl-theme .owl-nav .disabled{
@@ -369,23 +377,30 @@ body{
    letter-spacing: -1.5px;
    padding: 30px 0px;
    color: #fff;
+   font-family: Glober book;
 }
 .color-red{
     color: #f44535;
 }
 .program-box .prog-single h6{
     font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
 }
 .program-box .prog-single>span{
     margin-top:10px;
     font-size: 13px;
     letter-spacing: -0.65px;
+    font-family: Glober Bold;
 }
 .program-box .prog-single p{
     margin-top:10px;
     font-size: 18px;
+    font-family: Glober book;
 }
-
+.program-box .prog-single p span{
+    font-family: Glober Bold;
+}
 .program-box .prog-single{
    padding-top: 30px;
     margin-right: 40px;
@@ -406,13 +421,14 @@ body{
     padding-top: 30px;
     padding-bottom: 30px;
     font-size: 13px;
-    font-weight: bold;
     color: #fff;
     max-width: 1172px;
     margin: auto;
+    font-family: Glober Bold;
 }
 .program-bottom-text span{
     font-weight: bolder;
+    font-family: Glober bblack;
 }
 
 .program-bottom-box{
@@ -425,11 +441,23 @@ body{
     max-width: 1172px;
     
 }
+.program-bottom-box>h5{
+    font-family: Glober book;
+}
+.text-box h5{
+    font-family: Glober Regular;
+}
+.text-box h5 span{
+    font-family: Glober Bold;
+}
 .program-box .p-time{
     font-size: 24px;
+    font-family: Glober bblack;
 }
 .p-top-text{
     font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
 }
 
 /*  ==============  program bottom box =================== */
@@ -451,7 +479,7 @@ body{
     line-height: 36px;
 }
 .program-bottom-box .p-text-box span{
-    font-weight: bold;
+    font-family: Glober Bold;
 }
 .program-bottom-box .btn-outline-light:hover{
     color: #fff;
@@ -467,6 +495,7 @@ body{
 .startup-section .number-box .text, 
 .blog-section .number-box .text{
     color: #333333;
+    font-family: Glober bblack;
 }
 .startup-section .number-box .line,
 .blog-section .number-box .line{
@@ -483,6 +512,7 @@ body{
     font-size: 30px;
     letter-spacing: -1.5px;
     color: #f44535;
+    font-family: Glober book;
 }
 .startup-img-box{
     position: absolute;
@@ -508,10 +538,12 @@ body{
     line-height: 50px;
     margin-top: 10px;
     margin-bottom: 38px;
+    font-family: Glober Bold;
 }
 .start-up-redbox h3{
     font-size: 30px;
     letter-spacing: -1.5px;
+    font-family: Glober book;
 }
 .start-up-redbox p{
     font-size: 20px;
@@ -567,11 +599,13 @@ body{
     position: relative;
     top: 10px;
     transition: all .3s;
+    font-family: Glober Bold;
 }
 .logo-box-inner span{
     position: relative;
     top: 10px;
     transition: all .3s;
+    font-family: Glober book;
 }
 .logo-box:hover .logo-box-inner h5{
     top: 0px;
@@ -645,7 +679,7 @@ body{
 }
 .blog-box .inner-box .link-arrow {
     font-size: 13px;
-    font-weight: bold;
+    font-family: Glober Bold;
     letter-spacing: -0.65px;
     
 }
@@ -698,6 +732,8 @@ body{
 }
 .spondors-section h6{
     margin-top: 60px;
+    font-family: Glober Bold;
+    letter-spacing: -0.7px;
 }
 .spondors-section .single-logo{
    margin-bottom: 35px;
@@ -722,5 +758,12 @@ body{
 }
 .footer-nav a{
     font-size: 14px;
+    font-family: Glober book;
 }
+.footer-nav a .fa-facebook{
+    font-size: 24px;
+}
+.footer-nav .b{
+    font-family: Glober bblack;
+    letter-spacing: 2px;
 }
