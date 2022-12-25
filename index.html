@@ -35,11 +35,11 @@
             </a>
            <div class="d-none d-lg-block">
                 <ul class="nav header-nav">
-                    <li><a href="#" class="nav-link text-uppercase">Veranstaltung</a></li>
-                    <li><a href="#" class="nav-link text-uppercase">Speakers</a></li>
-                    <li><a href="#" class="nav-link text-uppercase">Programm</a></li>
-                    <li><a href="#" class="nav-link text-uppercase">Start-up Area</a></li>
-                    <li><a href="#" class="nav-link text-uppercase">Rückblicke</a></li>
+                    <li><a href="#Veranstaltung" class="nav-link text-uppercase">Veranstaltung</a></li>
+                    <li><a href="#Speakers" class="nav-link text-uppercase">Speakers</a></li>
+                    <li><a href="#Programm" class="nav-link text-uppercase">Programm</a></li>
+                    <li><a href="#Start-up" class="nav-link text-uppercase">Start-up Area</a></li>
+                    <li><a href="#blog" class="nav-link text-uppercase">Rückblicke</a></li>
                 </ul>
            </div>
         </div>
@@ -59,7 +59,7 @@
                 </select>
             </div>
             <div class="bars d-flex align-items-center d-lg-none">
-               <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample"> <i class="fa-regular fa-bars"></i></a>
+               <button class="btn" id="OpenMenu" role="button" > <i class="fa-regular fa-bars"></i></button>
             </div>
             <a class="tikt text-decoration-none d-flex align-items-center text-uppercase" href="">Tickets</a>
            
@@ -67,7 +67,7 @@
       </div>
   </header>
 
-  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
     <div class="offcanvas-header">
       <a href="/" class="text-decoration-none">
         <img class="header-logo" src="images/header-logo.svg" alt="header-logo">
@@ -86,11 +86,11 @@
     <div class="offcanvas-body d-flex flex-column align-content-between">
         
             <ul class="list-unstyled text-center header-nav-offcave">
-                <li><a href="#" class="nav-link text-uppercase">Veranstaltung</a></li>
-                <li><a href="#" class="nav-link text-uppercase">Speakers</a></li>
-                <li><a href="#" class="nav-link text-uppercase">Programm</a></li>
-                <li><a href="#" class="nav-link text-uppercase">Start-up Area</a></li>
-                <li><a href="#" class="nav-link text-uppercase">Rückblicke</a></li>
+                <li><a data-bs-dismiss="offcanvas" href="#Veranstaltung" class="nav-link text-uppercase" >Veranstaltung</a></li>
+                <li><a data-bs-dismiss="offcanvas" href="#Speakers" class="nav-link text-uppercase">Speakers</a></li>
+                <li><a data-bs-dismiss="offcanvas" href="#Programm" class="nav-link text-uppercase">Programm</a></li>
+                <li><a data-bs-dismiss="offcanvas" href="#Start-up" class="nav-link text-uppercase">Start-up Area</a></li>
+                <li><a data-bs-dismiss="offcanvas" href="#blog" class="nav-link text-uppercase">Rückblicke</a></li>
             </ul>
             <div class="text-center mt-auto">
                 <img src="images/sponsor-logo.svg" alt="">
@@ -139,7 +139,7 @@
     <img src="images/mobile-banner-bottom-spo-logo.svg" alt="">
 </div>
 <!-- =============== ================ forum ===================== =============== -->
-<div class="forum-section">
+<div id="Veranstaltung" class="forum-section">
     <div class="number-box text-center">
         <img src="images/one.svg" alt="">
         <div class="line-box" >
@@ -171,7 +171,7 @@
     </div>
 </div>
 <!-- =============== ================ speaker ===================== =============== -->
-<div class="speaker-section">
+<div id="Speakers" class="speaker-section">
     <div class="speaker-part">
         <div class="number-box text-center">
             <img src="images/two.svg" alt="">
@@ -238,7 +238,7 @@
             </div>   
         </div>
     </div>
-    <div class="program-part">
+    <div id="Programm" class="program-part">
         <div class="number-box text-center">
             <img class="d-none d-md-block" src="images/three.svg" alt="">
             <img class="d-md-none" src="images/three-mobile.svg" alt="">
@@ -401,7 +401,7 @@
 
 
 <!-- =============== ================ startup ===================== =============== -->
-<div class="startup-section">
+<div id="Start-up" class="startup-section">
     <div class="number-box text-center">
         <img src="images/four.svg" alt="">
         <div class="line-box" >
@@ -548,7 +548,7 @@
 </div>
 
 <!-- =============== ================ blog ===================== =============== -->
-<div class="blog-section">
+<div id="blog" class="blog-section">
     <div class="number-box text-center">
         <img src="images/five.svg" alt="">
         <div class="line-box" >

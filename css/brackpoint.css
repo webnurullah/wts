@@ -355,6 +355,14 @@
       margin-bottom: 0px;
       text-transform: uppercase;
     } 
+
+     /* ===================================== speaker section  ======================================== */
+     .speaker-section{
+      background: url(../images/mobile-Speakers-bg.png) no-repeat center center;  
+      background-size: cover;
+      width: 100%;
+      background-attachment: fixed;
+    }
     #speaker-slider{
       max-width: 90%;
     }
@@ -371,6 +379,16 @@
     .startup-content {
       max-width: 290px;
   }
+  .blog-content .owl-theme .owl-nav {
+    margin-top: 0px;
+    position: absolute;
+    top: -121px;
+    font-size: 30px;
+
+  }
+  .blog-content .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
+    padding: 10px !important;
+}
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -470,12 +488,7 @@
       margin-bottom: 35px;
     }
     /* ===================================== speaker section  ======================================== */
-    .speaker-section{
-      background: url(../images/mobile-Speakers-bg.png) no-repeat center center;  
-      background-size: cover;
-      width: 100%;
-      background-attachment: fixed;
-    }
+   
     .owl-theme .owl-nav.disabled+.owl-dots{
       margin-top: 50px;
     }
@@ -483,7 +496,7 @@
       background-color: #fff;
       padding-top: 130px;
       padding-bottom: 30px;
-  } 
+     } 
   .program-box{
     border-radius: 0px 0px 5px 5px;
   }
